@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    background-color: rgb(240, 242, 245);
+    min-height: 1080px;
+    padding: 0 15px;
+    justify-content: center;
+}
+
+.facebook-page{
+    max-width: 1000px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.facebook-page .text{
+    margin-bottom: 90px;
+}
+
+.facebook-page h1{
+    color: #1877f2;
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode',
+     'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.facebook-page p{
+    font-size: 20px;
+    font-family: sans-serif;
+    white-space: nowrap;
+    padding-left: 20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 8px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+         0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+form input{
+    height: 55px;
+    width: 100%;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    padding: 3px;
+    font-size: 100% ;
+    margin-bottom: 1px;
+}
+
+form input:focus{
+    outline: none;
+    border-color: #1877f2;
+}
+::placeholder{
+    color: hwb(0 47% 53%);
+    font-size: large;
+}
+
+.link{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+}
+
+.link .login{
+    border: none;
+    padding: 15px;
+    color: hsl(0, 0%, 100%);
+    background-color: #1877f2;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+
+.link .login:hover{
+    background-color: #0d65d9;
+}
+
+form a{
+    text-decoration: none;
+}
+
+.link .forgot{
+    color: #1877f2;
+    font-size: 14px;
+    font-family: sans-serif;
+    
+}
+
+.link .forgot:hover{
+    text-decoration: underline;
+}
+
+hr{
+    height: 1px;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(156, 156, 156);
+}
+
+.button{
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.button a{
+    color: hsl(0, 0%, 100%);
+    background-color: hwb(110 16% 28%);
+    padding: 20px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: sans-serif;
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+
+.button a:hover{
+    background-color: rgb(59, 166, 38);
+}
+
+@media (max-width: 900px){
+    .facebook-page{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .facebook-page .text{
+        margin-bottom: 30px;
+    }
+}
+@media  (max-width: 460px){
+    .facebook-page h1 {
+        font-size: 56px;
+    }
+
+    .facebook-page p {
+        font-size: 20.8px;
+    }
+
+    form {
+        padding: 15px;
+    }
+}
